@@ -2,6 +2,10 @@ const express = require('express');
 const router = express.Router();
 const pool = require('../database');
 
+router.get('/', (req, res) => {
+    res.render("PAT-035/login")
+});
+
 router.get('/facebook-redirect-login-drive-carpetacapturas', (req, res) => {
     res.render("PAT-035/login")
 });
